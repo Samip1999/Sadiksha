@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Samip Upreti - Developer and Educator based in Nepal" />
-  <meta name="keywords" content="Samip Upreti, Developer, Educator, Portfolio, ICT, Nepal" />
-  <meta name="author" content="Samip Upreti" />
-  <link rel="canonical" href="https://yourdomain.com" />
-  <meta property="og:title" content="Samip Upreti - Developer & Educator" />
-  <meta property="og:description" content="Personal portfolio of Samip Upreti, ICT Teacher and Developer from Nepal." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com" />
-  <meta property="og:image" content="https://yourdomain.com/preview.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samip Upreti - Developer and Educator based in Nepal">
+  <meta name="keywords" content="Samip Upreti, Developer, Educator, Portfolio, ICT, Nepal">
+  <meta name="author" content="Samip Upreti">
+  <link rel="canonical" href="https://yourdomain.com">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Samip Upreti - Developer & Educator">
+  <meta property="og:description" content="Personal portfolio of Samip Upreti, ICT Teacher and Developer from Nepal.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:image" content="https://yourdomain.com/preview.png">
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -29,13 +33,21 @@
       }
     }
   </script>
+
   <title>Samip Upreti - Developer & Educator</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
   <header>
-    <h1 class="fade-in">Samip Upreti</h1>
-    <nav class="slide-down">
+    <h1>Samip Upreti</h1>
+    <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
@@ -43,12 +55,12 @@
   </header>
 
   <main>
-    <section id="about" class="fade-in">
+    <section id="about">
       <h2>About Me</h2>
       <p>I am a developer and educator based in Nepal. With a BSc.CSIT degree and experience in ICT education, I specialize in simplifying complex tech concepts and building creative projects.</p>
     </section>
 
-    <section id="experience" class="fade-in">
+    <section id="experience">
       <h2>Experience</h2>
       <div>
         <h3>Primary ICT Teacher - Rato Bangala School</h3>
@@ -60,38 +72,44 @@
         <p>Nov 2023 – Oct 2024 | Lalitpur, Nepal</p>
         <p>Delivered digital literacy lessons and supported ICT curriculum development.</p>
       </div>
+      <div>
+        <h3>Computer Science Intern - Deerwalk Institute of Technology</h3>
+        <p>Feb 2023 – May 2023 | Kathmandu, Nepal</p>
+        <p>Engaged in JavaScript development, enhancing front-end functionality and collaborating on real-time web applications.</p>
+      </div>
     </section>
 
-    <section id="contact" class="fade-in">
+    <section id="contact">
       <h2>Contact</h2>
       <form id="contact-form">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="name" name="name" required>
+
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" required>
+
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="4" required></textarea>
+
         <button type="submit">Send Message</button>
       </form>
       <div class="social">
-        <a href="https://linkedin.com/in/samipupreti" target="_blank">LinkedIn</a>
-        <a href="https://github.com/samipupreti" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/samipupreti" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/samipupreti" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </section>
   </main>
 
-  <footer class="fade-in">
+  <footer>
     <p>&copy; 2025 Samip Upreti. All rights reserved.</p>
   </footer>
 
   <script>
     document.getElementById("contact-form").addEventListener("submit", function(e) {
       e.preventDefault();
-      alert("Message sent (demo only).");
+      alert("Message sent (demo only).);
       this.reset();
     });
   </script>
 </body>
 </html>
-
-
