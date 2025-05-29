@@ -1,48 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Samip Upreti - Developer and Educator based in Nepal">
-  <meta name="keywords" content="Samip Upreti, Developer, Educator, Portfolio, ICT, Nepal">
-  <meta name="author" content="Samip Upreti">
-  <link rel="canonical" href="https://yourdomain.com">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Samip Upreti - Developer and Educator based in Nepal" />
+  <meta name="keywords" content="Samip Upreti, Developer, Educator, Portfolio, ICT Teacher, Nepal" />
+  <meta name="author" content="Samip Upreti" />
+  <link rel="canonical" href="https://yourdomain.com" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Samip Upreti - Developer & Educator">
-  <meta property="og:description" content="Personal portfolio of Samip Upreti, ICT Teacher and Developer from Nepal.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourdomain.com">
-  <meta property="og:image" content="https://yourdomain.com/preview.png">
+  <meta property="og:title" content="Samip Upreti - Developer & Educator" />
+  <meta property="og:description" content="Portfolio of Samip Upreti - Developer and Educator from Nepal" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:image" content="https://yourdomain.com/preview.png" />
 
-  <!-- Structured Data -->
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Samip Upreti",
       "url": "https://yourdomain.com",
-      "sameAs": [
-        "https://linkedin.com/in/samipupreti",
-        "https://github.com/samipupreti"
-      ],
       "jobTitle": "ICT Teacher and Developer",
       "worksFor": {
         "@type": "Organization",
         "name": "Rato Bangala School"
-      }
+      },
+      "sameAs": [
+        "https://linkedin.com/in/samipupreti",
+        "https://github.com/samipupreti"
+      ]
     }
   </script>
 
   <title>Samip Upreti - Developer & Educator</title>
-  <link rel="stylesheet" href="styles.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --fg: #c9d1d9;
+      --accent: #58a6ff;
+      --card: #161b22;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--fg);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background: var(--accent);
+      width: 0%;
+      transition: width 0.3s ease;
+      margin-top: 4px;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      animation: fadeInUp 1s ease;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: white;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .social a {
+      color: var(--accent);
+      margin-right: 1rem;
+      text-decoration: none;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      margin-top: 0.25rem;
+      border: none;
+      border-radius: 6px;
+      background: var(--card);
+      color: var(--fg);
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #1f6feb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin: 0 0.5rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -57,25 +201,20 @@
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>I am a developer and educator based in Nepal. With a BSc.CSIT degree and experience in ICT education, I specialize in simplifying complex tech concepts and building creative projects.</p>
+      <p>I’m a developer and educator based in Nepal. With a BSc.CSIT degree and hands-on teaching experience, I bring technical depth and educational insight to the world of ICT and software development.</p>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
       <div>
         <h3>Primary ICT Teacher - Rato Bangala School</h3>
-        <p>Oct 2024 – Present | Lalitpur, Nepal</p>
-        <p>Teaching computer science and Makerspace activities to primary-level students.</p>
+        <p><strong>Oct 2024 – Present</strong> | Lalitpur, Nepal</p>
+        <p>Teaching computer science and Makerspace activities to young learners.</p>
       </div>
       <div>
         <h3>ICT Educator - Gems School</h3>
-        <p>Nov 2023 – Oct 2024 | Lalitpur, Nepal</p>
-        <p>Delivered digital literacy lessons and supported ICT curriculum development.</p>
-      </div>
-      <div>
-        <h3>Computer Science Intern - Deerwalk Institute of Technology</h3>
-        <p>Feb 2023 – May 2023 | Kathmandu, Nepal</p>
-        <p>Engaged in JavaScript development, enhancing front-end functionality and collaborating on real-time web applications.</p>
+        <p><strong>Nov 2023 – Oct 2024</strong> | Lalitpur, Nepal</p>
+        <p>Delivered engaging digital literacy lessons and improved the ICT curriculum.</p>
       </div>
     </section>
 
@@ -83,19 +222,19 @@
       <h2>Contact</h2>
       <form id="contact-form">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" required>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" required>
 
         <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <textarea id="message" rows="4" required></textarea>
 
         <button type="submit">Send Message</button>
       </form>
-      <div class="social">
-        <a href="https://linkedin.com/in/samipupreti" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/samipupreti" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <div class="social" style="margin-top:1rem;">
+        <a href="https://linkedin.com/in/samipupreti" target="_blank">LinkedIn</a>
+        <a href="https://github.com/samipupreti" target="_blank">GitHub</a>
       </div>
     </section>
   </main>
@@ -105,9 +244,9 @@
   </footer>
 
   <script>
-    document.getElementById("contact-form").addEventListener("submit", function(e) {
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
       e.preventDefault();
-      alert("Message sent (demo only).");
+      alert("Thanks for your message! (This is a demo form)");
       this.reset();
     });
   </script>
